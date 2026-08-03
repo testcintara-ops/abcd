@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Task Board</h1>
+    <p class="subtitle">A tiny to-do app. No build step, no framework.</p>
+
+    <form id="task-form">
+      <input id="task-input" type="text" placeholder="Add a task..." autocomplete="off" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <ul id="task-list"></ul>
+
+    <footer>
+      <span id="task-count">0 tasks</span>
+      <button id="clear-done" type="button">Clear done</button>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
