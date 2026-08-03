@@ -46,7 +46,9 @@ function render() {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  tasks.push({ text: input.value.trim(), done: false });
+  const text = input.value.trim();
+  if (!text) return;
+  tasks.push({ text, done: false });
   input.value = "";
   save();
   render();
